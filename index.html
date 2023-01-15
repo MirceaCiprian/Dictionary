@@ -16,14 +16,14 @@
             <div class="card-body">
                 <input id="word-field" required pattern="\S(.*\S)?" class="form-control form-control-lg" type="text" placeholder="Introduce a word" aria-label=".form-control-lg example">
                 <br>
-                <button type="button" class="btn btn-primary" onclick="AddWord()">Add word</button>
+                <button type="button" class="btn btn-primary" onclick="addWord()">Add word</button>
             </div>
         </div>
         <div class="card">
           <div class="card-body">
                 <input id="search-field" class="form-control form-control-lg" type="text" placeholder="Search word" aria-label=".form-control-lg example">
                 <br>
-                <button type="button" class="btn btn-primary" onclick="SearchWord()">Search</button>
+                <button type="button" class="btn btn-primary" onclick="searchWord()">Search</button>
                 <br>
                 <h5 id ="result">
 
@@ -32,8 +32,8 @@
         </div>
         <div class="card">
           <div class="card-body">
-                  <button type="button" class="btn btn-primary" onclick="WordList()">Show list of words</button>
-                  <button type="button" class="btn btn-danger" onclick="WordListClose()">Close list of words</button>
+                  <button type="button" class="btn btn-primary" onclick="wordList()">Show list of words</button>
+                  <button type="button" class="btn btn-danger" onclick="wordListClose()">Close list of words</button>
                   <ul class="list-group">
                     <br>
                     <li id = "list-of-words" class="list-group-item"></li>

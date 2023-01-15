@@ -1,7 +1,6 @@
 const dictionary = [];
 
-function AddWord()
-{
+function addWord() {
     let word = document.getElementById("word-field").value;
     if(dictionary.includes(word) === false)
         dictionary.push(word);
@@ -10,16 +9,14 @@ function AddWord()
     
 }
 
-function WordList()
-{
+function wordList() {
     for(let i = 0; i < dictionary.length; i++)
     {
         document.getElementById("list-of-words").innerHTML = dictionary.join("<br>");
     }
     
 }
-function SearchWord()
-{
+function searchWord() {
     let word = document.getElementById("search-field").value;
     if(word.length == 0)
     {
@@ -31,7 +28,6 @@ function SearchWord()
         document.getElementById("result").innerHTML = "Word not in the list";
 }
 
-function WordListClose()
-{
+function wordListClose() {
     document.getElementById("list-of-words").innerHTML ="";    
 }
